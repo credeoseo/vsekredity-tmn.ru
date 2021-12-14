@@ -1,0 +1,10 @@
+{
+    "name": "Все кредиты",
+    "logoUrl": "/img/logo.png",
+    "faviconUrl": "/img/favicon.png",
+    "department": "MSK",
+    "wmid": "18245",
+    "city": "Тюмень",
+    "api": "https://dev3.credeo.ru/v1/lead/new-guest",
+    "credeoApi": true
+}
