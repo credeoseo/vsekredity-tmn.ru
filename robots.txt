@@ -1,0 +1,4 @@
+Sitemap: https://vsekredity-tmn.ru/sitemap.xml
+
+User-agent: *
+Disallow:
