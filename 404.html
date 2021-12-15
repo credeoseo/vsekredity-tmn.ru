@@ -1,3 +1,10 @@
+
+	
+	
+	
+	
+	
+
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -16,19 +23,20 @@
 	<header id="header" class="sticky top-0 z-10 w-full bg-gradient-to-b from-white via-white" x-data="{ openMenu: false }">
 	<div class="container py-5 mx-auto">
 		<div class="relative grid items-center grid-cols-2 lg:grid-cols-3 lg:w-4/5 xl:w-3/5 lg:mx-auto">
-			<ul class="items-center hidden space-x-8 lg:flex">
+			<ul class="items-center hidden space-x-4 lg:flex whitespace-nowrap">
 				
 				<li>
-					<a href="/contacts" aria-label="Our product" title="Our product" class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-themes-default">
+					<a href="/contacts" class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-themes-default">
 						Контакты
 					</a>
 				</li>
 				
 				<li>
-					<a href="/about-us" aria-label="Our product" title="Our product" class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-themes-default">
+					<a href="/about-us" class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-themes-default">
 						О нас
 					</a>
 				</li>
+				
 				
 			</ul>
 			<a href="/" aria-label="Все кредиты" title="Все кредиты" class="inline-flex items-center lg:mx-auto">
@@ -122,6 +130,7 @@
 									<span>WhatsApp</span>
 								</a>
 							</li>
+							
 						</ul>
 						</nav>
 					</div>
@@ -169,11 +178,13 @@
 				<a href="mailto:info@vsekredity-tmn.ru" aria-label="info@vsekredity-tmn.ru" title="info@vsekredity-tmn.ru" class="transition-colors duration-300 text-deep-purple-accent-400 hover:text-deep-purple-800">info@vsekredity-tmn.ru</a>
 			</div>
 			<div class="flex">
-				<p class="mr-1 text-gray-800">Адрес:</p>
 				
-				<a href="https://2gis.ru/tyumen/search/%D1%82%D1%8E%D0%BC%D0%B5%D0%BD%D1%8C%20%D0%B2%D1%81%D0%B5%20%D0%BA%D1%80%D0%B5%D0%B4%D0%B8%D1%82%D1%8B/firm/70000001054732816/65.512836%2C57.136019?m=65.512857%2C57.136004%2F16.19" target="_blank" rel="nofollow noopener noreferrer" aria-label="г. Тюмень, ул. Калинина, д. 62, офис 205" title="г. Тюмень, ул. Калинина, д. 62, офис 205" class="transition-colors duration-300 text-deep-purple-accent-400 hover:text-deep-purple-800">
-					г. Тюмень, ул. Калинина, д. 62, офис 205
-				</a>
+					<p class="mr-1 text-gray-800">Адрес:</p>
+					
+					<a href="https://2gis.ru/tyumen/search/%D1%82%D1%8E%D0%BC%D0%B5%D0%BD%D1%8C%20%D0%B2%D1%81%D0%B5%20%D0%BA%D1%80%D0%B5%D0%B4%D0%B8%D1%82%D1%8B/firm/70000001054732816/65.512836%2C57.136019?m=65.512857%2C57.136004%2F16.19" target="_blank" rel="nofollow noopener noreferrer" aria-label="г. Тюмень, ул. Калинина, д. 62, офис 205" title="г. Тюмень, ул. Калинина, д. 62, офис 205" class="transition-colors duration-300 text-deep-purple-accent-400 hover:text-deep-purple-800">
+						г. Тюмень, ул. Калинина, д. 62, офис 205
+					</a>
+					
 				
 			</div>
 		</div>
@@ -205,7 +216,7 @@
 					'utm_source': "Все кредиты Тюмень"
 				},
 				
-				
+
 				message: '',
 				showMessage: false,
 				loading: false,
@@ -216,7 +227,7 @@
 				this.loading = true;
 				this.message = ''
 
-				fetch('https://dev3.credeo.ru/v1/lead/new-guest', {
+				fetch('https://credeo.ru/v1/lead/new-guest', {
 					method: 'POST',
 					headers: {
 						'Content-Type': 'application/json'
