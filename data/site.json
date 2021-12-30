@@ -6,5 +6,7 @@
     "wmid": "18245",
     "city": "Тюмень",
     "api": "https://credeo.ru/v1/lead/new-guest",
-    "credeoApi": true
+    "credeoApi": true,
+    "source_id": "629",
+    "broker_id": "17"
 }
